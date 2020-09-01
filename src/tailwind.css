@@ -1,0 +1,46 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face{
+  font-family: "Averta-Light";
+  src: local("Averta-Light"), url('./fonts/Averta\ Light.woff') format("woff");
+}
+@font-face{
+  font-family: "Averta-Regular";
+  src: local("Averta-Regular"), url(./fonts/AvertaDemo-Regular.otf) format("opentype");
+}
+ @font-face{
+  font-family: "Averta-SemiBold";
+  src: local("Averta-SemiBold"), url('./fonts/Averta\ Semibold.woff') format("woff");
+}
+@font-face{
+  font-family: "Averta-Bold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Averta-Bold"), url(./fonts/Averta-Bold.woff) format('woff');
+}
+@font-face{
+  font-family: "Averta-ExtraBold";
+  src: local("Averta-ExtraBold"), url('./fonts/Averta\ Extra\ Bold.woff') format("woff");
+}
+h1,h2,h3,h4,h5{
+  font-family: "Averta-Bold";
+}
+body{
+  color: #0d1946;
+}
+.background-blue{
+  background-color: #0d1946;
+}
+.bg-gray{
+  background-color: #f3f3f6;
+}
+.yellow-bg{
+  background-color: #ffdf00;
+}
+.yellow{
+  color: #ffdf00;
+}

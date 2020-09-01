@@ -1,0 +1,222 @@
+.yellow {
+  color: #FFDF00;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+#the_navbar {
+  color: white;
+  background-color: #0D1946;
+  font-family: "Averta-Regular";
+}
+
+#the_navbar .logo {
+  display: flex;
+}
+
+#the_navbar .logo svg {
+  margin: 0 10px;
+  width: 30px;
+}
+
+#the_navbar .nav__logo {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: auto 0;
+  width: 200px;
+}
+
+#the_navbar .nav__logo span {
+  color: #FFDF00;
+}
+
+#the_navbar li {
+  list-style: none;
+}
+
+#the_navbar .desktop__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1.5rem 1rem;
+}
+
+#the_navbar .desktop__navbar .desktop__nav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#the_navbar .desktop__navbar .desktop__nav__list li {
+  margin: auto .15rem;
+}
+
+#the_navbar .desktop__navbar .desktop__nav__list li a {
+  padding: 1rem 1rem .5rem;
+  margin: .5rem 0 auto 0;
+}
+
+#the_navbar .desktop__navbar .desktop__nav__list li a:hover {
+  color: #FFDF00 !important;
+}
+
+#the_navbar .desktop__navbar .desktop__nav__list li .active {
+  color: #FFDF00 !important;
+}
+
+#the_navbar .desktop__navbar .desktop__nav__list li .sign__up {
+  border: 2px solid #FFDF00;
+  color: #FFDF00;
+  padding: .75rem 1.2rem;
+  border-radius: .25rem;
+}
+
+#the_navbar .desktop__navbar .desktop__nav__list li .sign__up:hover {
+  border: 2px solid transparent;
+  background-color: #FFDF00;
+  color: white;
+}
+
+#the_navbar .mobile__nav,
+#the_navbar .mobile__hamburger {
+  display: none;
+  overflow: hidden;
+}
+
+#the_navbar .mobile__hamburger {
+  margin: .5rem 0;
+  width: 35px;
+  cursor: pointer;
+}
+
+#the_navbar .mobile__hamburger div, #the_navbar .mobile__hamburger::before, #the_navbar .mobile__hamburger:after {
+  background-color: #fff;
+  content: '';
+  display: block !important;
+  height: 2px;
+  margin: 7px 0;
+  transition: all .2s ease-in-out;
+  z-index: 30;
+}
+
+#the_navbar .mobile__hamburger::before {
+  width: 20px;
+}
+
+#the_navbar .mobile__hamburger::after {
+  width: 20px;
+  transform: translateX(15px);
+}
+
+#the_navbar .mobile__hamburger:hover div {
+  width: 25px;
+  transform: translateX(10px);
+}
+
+#the_navbar .mobile__hamburger:hover:after {
+  width: 30px;
+  transform: translateX(5px);
+}
+
+#the_navbar .mobile__hamburger:hover::before {
+  width: 35px;
+}
+
+#the_navbar .mobile__nav__bg {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: #0D1946;
+  color: #fff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 4;
+}
+
+#the_navbar .mobile__nav__bg .mobile__nav .closeBtn {
+  margin: 1rem 0;
+  width: 35px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+#the_navbar .mobile__nav__bg .mobile__nav .closeBtn div, #the_navbar .mobile__nav__bg .mobile__nav .closeBtn::before, #the_navbar .mobile__nav__bg .mobile__nav .closeBtn:after {
+  background-color: #fff;
+  content: '';
+  display: block !important;
+  height: 3.5px;
+  margin: -4px;
+  transition: all .2s ease-in-out;
+  z-index: 30;
+}
+
+#the_navbar .mobile__nav__bg .mobile__nav .closeBtn div {
+  display: none !important;
+}
+
+#the_navbar .mobile__nav__bg .mobile__nav .closeBtn::before {
+  transform: rotate(135deg);
+}
+
+#the_navbar .mobile__nav__bg .mobile__nav .closeBtn::after {
+  transform: rotate(-135deg);
+}
+
+#the_navbar .mobile__nav__bg .mobile__nav li {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+#the_navbar .mobile__nav__bg .mobile__nav li:hover {
+  color: #FFDF00;
+}
+
+#the_navbar .mobile__nav__bg .mobile__nav .active {
+  color: #FFDF00;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(0);
+    display: flex;
+  }
+  to {
+    transform: translateY(-100vh);
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  #the_navbar .desktop__navbar {
+    padding: 1.5rem 0;
+  }
+  #the_navbar .desktop__navbar .desktop__nav__list {
+    display: none !important;
+  }
+  #the_navbar .mobile__nav__bg {
+    position: fixed;
+    animation: slide-down .5s ease-in-out 0s 1 alternate;
+  }
+  #the_navbar .mobile__nav,
+  #the_navbar .mobile__hamburger {
+    display: block;
+  }
+}
