@@ -17,8 +17,8 @@ function Landingpage() {
             process from conceptualization to delivery. An expert at interdepartmental coordination and
             communication, able to stretch the boundaries of digital storytelling to create products that
             meet people’s needs.</p>
-            <div className="flex justify-between py-6">
-              <button className="px-8 py-2 text-black font-bold yellow-bg">Currently Open to Opportunities</button>
+            <div className="flex justify-between py-6 gap-5 flex-wrap">
+              <button className="lg:px-8 px-5 py-2 text-black font-bold yellow-bg">Currently Open to Opportunities</button>
               <button className="px-8 py-2 border">Get CV</button>
             </div>
           </div>
