@@ -4,10 +4,18 @@ import Brandingproject from './Brandingproject'
 import headerimage from '../../images/header__image.svg'
 import src1 from '../../images/Rectangle 596.svg'
 import src2 from '../../images/Rectangle 597.svg'
+// import { Switch, Route } from 'react-router-dom'
+// import Workcappy from '../Projects/Workcappy'
+// import Projects from '../Projects/Atunlo'
 
 function Landingpage() {
   return (
     <div className="">
+      {/* <Switch>
+      <Route exact path="/" component={Landingpage} />
+        <Route exact path="/workcappy" component={Workcappy} />
+        <Route exact path="Atunlo" component={Projects} />
+      </Switch> */}
       <div className="header-content container-fluid py-12 background-blue text-white">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row">
           <div className="my-auto w-full lg:w-6/12 px-8">
@@ -31,7 +39,10 @@ function Landingpage() {
           <h5 class="text-center py-12 text-xl">UI/UX Projects</h5>
           <div>
             <div className="container mx-auto w-10/12">
-              <Projectsample heading="WorkyCappy Bank" explaination="A Bank that aids businesses and firms efficiently and effectively manage their working capital" />
+              <Projectsample 
+              heading="WorkyCappy Bank" 
+              explaination="A Bank that aids businesses and firms efficiently and effectively manage their working capital"
+               />
               <Projectsample position="flex-row-reverse" heading="Atunlo (A Recycling App)" explaination="Atunlo helps ensure you do not worry about waste disposal and grants you access to purchase fairly used products too."/>
               <Projectsample heading="The Nigerian Breweries PLC (Redesign)" explaination="Nigerian Breweries PLC is the pioneer and biggest brewing company in Nigeria"/>
             </div>

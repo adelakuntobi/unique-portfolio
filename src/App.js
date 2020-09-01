@@ -5,10 +5,10 @@ import gmail from './images/gmail.svg'
 import behance from './images/behance.svg'
 import linkedin from './images/linkedin.svg'
 import last from './images/last.svg'
-import { Link, Route, Switch, Redirect } from 'react-router-dom';
+import { Link, NavLink, Route, Switch, Redirect } from 'react-router-dom';
 import Landingpage from './components/Landingpage/Landingpage';
 import Contact from './components/Contact/Contact';
-import Projects from './components/Projects/Projects';
+import Projects from './components/Projects/Atunlo';
 import Logo from './images/logo.svg'
 
 function App() {
@@ -22,9 +22,9 @@ function App() {
               <p className="nav__logo">Unique<span>Ideas</span>.</p>
             </div>
             <ul className="desktop__nav__list">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/projects">Projetcs </Link></li>
-              <li><Link to="/contact">Contact Me </Link></li>
+              <li activeClassName="active" ><NavLink exact to="/">Home</NavLink></li>
+              <li activeClassName="active"><NavLink to="/projects">Projects </NavLink></li>
+              <li activeClassName="active"><NavLink to="/contact">Contact Me </NavLink></li>
             </ul>
             <div id="openButton" className="mobile__hamburger">
               <div></div>
@@ -36,7 +36,7 @@ function App() {
                 <div></div>
               </div>
               <ul>
-                <li><Link to="/">Home</Link></li>
+                <li><Link to="/" activeClassName="active">Home</Link></li>
                 <li><Link to="/projects">Projetcs </Link></li>
                 <li><Link to="/contact">Contact Me </Link></li>
               </ul>
