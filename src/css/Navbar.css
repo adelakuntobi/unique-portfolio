@@ -192,12 +192,9 @@ a:hover {
  footer .footer_content {
   background-color: #0D1946;
   color: white;
-  padding: 4rem 0 6rem;
+  padding: 4rem 2rem 6rem 2rem;
 }
 
- footer .footer_content p {
-  line-height: 3;
-}
 
  footer .footer_content img {
   margin: 0 10px;

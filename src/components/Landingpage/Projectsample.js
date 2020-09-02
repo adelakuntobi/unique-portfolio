@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 // var project2 = require('../../images/Rectangle 593.png');
 function Projectsample(props) {
-  const {heading,explaination,position} = props
+  const {heading,explaination,position,link} = props
   return (
     <div>
       <div className={`${position} text-white block lg:flex pb-16 gap-x-16`}>
@@ -12,8 +12,8 @@ function Projectsample(props) {
         <div className="mt-0 mb-auto background-blue p-8">
           <h5 className="text-2xl">{heading}</h5>
           <h6 className="py-4">UI + UX</h6>
-          <p>{explaination}</p>
-          <Link to="/workycappy">
+          <p className="text-sm">{explaination}</p>
+          <Link to={"/projects/"+link}>
           <button className="yellow-bg px-8 py-2 text-black font-bold mt-8 mb-4">Take a Look</button>
           </Link>
         </div>

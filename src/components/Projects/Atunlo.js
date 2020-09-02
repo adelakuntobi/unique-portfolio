@@ -54,21 +54,21 @@ function Atunlo() {
           <Text title="WireFrames"
             content="Based on the user flow generated out of research,, I outlined required features that the app should possess and imagined it visually. The wireframe represents the skeletal framework of the app" />
           <div className="flex flex-wrap justify-between">
-            <img src={wireFrames1} alt="wireFrames1" className="m-6" />
-            <img src={wireFrames2} alt="wireFrames2" className="m-6" />
+            <img src={wireFrames1} alt="wireFrames1" className="p-6" />
+            <img src={wireFrames2} alt="wireFrames2" className="p-6" />
           </div>
           <div className="flex-col-reverse lg:flex-row justify-between flex container mx-auto">
             <img src={highFidelity} alt="highFidelity" className="w-full lg:w-9/12" />
             <h1 className="text-4xl text-center lg:m-auto my-8 w-full">Onboarding Screens<span className="yellow text-5xl">.</span></h1>
           </div>
         </div>
+        </div>
         <div className="orange-bg text-center py-16">
           <Text title="Waste Disposal" />
-          <div className="container mx-auto">
+          <div className="container mx-auto px-4">
             <img src={wasteDisposal} alt="Waste Disposal" />
             <img src={wasteDisposal2} alt="Waste Disposal" />
           </div>
-        </div>
       </div>
       <div className="container content mx-auto text-center">
         <Text title="Waste Sell Off / Giveaway"

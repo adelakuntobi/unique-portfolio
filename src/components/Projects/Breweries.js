@@ -4,7 +4,7 @@ import Text from '../ProjectComponent/Text'
 import banner from '../../images/breweries.png'
 import '../../css/Projects.css';
 
-function Projects() {
+function Breweries() {
   return (
     <div>
       <Header
@@ -39,4 +39,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Breweries

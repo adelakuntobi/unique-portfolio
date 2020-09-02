@@ -18,11 +18,11 @@ import Text from '../ProjectComponent/Text'
 // Stylesheet
 import '../../css/Projects.css';
 
-function Workcappy() {
+function Workycappy() {
   return (
     <div>
       <Header title="WorkyCappy Bank"
-      role="Roles I played"
+        role="Roles I played"
         list1="User Experience (UX) Designer"
         list2="User Interface (UI) Designer"
         list3="Interaction Designer"
@@ -69,50 +69,52 @@ function Workcappy() {
             individual to their Network. This helps the user ensure that funds they lent out are used for its 
             intended purpose`}
           />
-          <div className="flex-col-reverse lg:flex-row lg:flex p-16">
-            <img src={screen1} alt="screen1" className="mx-6" />
-            <img src={screen2} alt="screen1" className="mx-6" />
+          <div className="flex-col-reverse lg:flex-row flex p-16 container mx-auto">
+            <div className="flex w-full lg:w-8/12">
+              <img className="w-6/12 px-4" src={screen1} alt="screen1" />
+              <img className="w-6/12 px-4" src={screen2} alt="screen1" />
+            </div>
             <h1 className="text-4xl m-auto">Home Screen<span className="yellow text-5xl">.</span></h1>
           </div>
           <span style={{ color: "#FF2525" }} className="py-4">* Hello, Please Tap Image to Zoom</span>
         </div>
+        </div>
         <div className="bg-gray text-center container-fluid py-8">
           <h2>Navigation Bar<span className="text-6xl yellow">.</span></h2>
           <div className="container mx-auto flex flex-wrap justify-between">
-            <img src={navgroup1} alt="screen1" className="m-6" />
-            <img src={navgroup2} alt="screen1" className="m-6" />
+            <img src={navgroup1} alt="screen1" className="p-6" />
+            <img src={navgroup2} alt="screen1" className="p-6" />
           </div>
-        </div>
 
-        <div className="container text-center mx-auto">
+        <div className="container content px-4 text-center mx-auto">
           <h2>Section One (Working Capital</h2>
-          <p>This section focuses on ensuring that the users intended working capital is secured to a great extent. It limits the users options to being able to send out funds from this wallet to only individuals he has added to this suppliers list. This way, money only leaves his wallet directly to the account of who he purchases goods or services from.</p>
+          <p className="pb-8">This section focuses on ensuring that the users intended working capital is secured to a great extent. It limits the users options to being able to send out funds from this wallet to only individuals he has added to this suppliers list. This way, money only leaves his wallet directly to the account of who he purchases goods or services from.</p>
           <div className="flex flex-wrap justify-between">
-            <img src={sectionOne1} alt="section one" className="m-6" />
-            <img src={sectionOne2} alt="section two" className="m-6" />
-            <img src={sectionOne3} alt="section three" className="m-6" />
+            <img src={sectionOne1} alt="section one" className="px-2" />
+            <img src={sectionOne2} alt="section two" className="px-2" />
+            <img src={sectionOne3} alt="section three" className="px-2" />
           </div>
         </div>
-        <div className="container mx-auto">
+        <div className="container content px-4 mx-auto">
           <h2 className="text-center">Transaction Management</h2>
-          <p> For an app that is intended to help people make finance related decisions and stick to it, it is of essence to create an avenue for them to split any funds received. This way they are able to differenciate profit from capital. The app enforces this mandatory function by giving a continuous notification until the user splits funds as without completing this process, the amount received won’t reflect on users balance.</p>
+          <p className="pb-8"> For an app that is intended to help people make finance related decisions and stick to it, it is of essence to create an avenue for them to split any funds received. This way they are able to differenciate profit from capital. The app enforces this mandatory function by giving a continuous notification until the user splits funds as without completing this process, the amount received won’t reflect on users balance.</p>
           <div className=" flex flex-wrap justify-between">
-            <img src={transaction} alt="transaction" className="m-6" />
+            <img src={transaction} alt="transaction" className="px-2" />
           </div>
         </div>
-        <div className="container mx-auto">
+        <div className="container content px-4 mx-auto">
           <h2 className="text-center">Section Two (Profit Wallet)</h2>
-          <p> This section serves as a wallet where the user saves his extra. The user can choose to intentionally send funds from this wallet to his working capital balance. He can also choose to loan out money to friends or family and be able to track what use the fund is put to especially if the fund was lent out as capital to run a business. By adding individuals to a Network, you receive updates on what transactions they perform.  </p>
+          <p className="pb-8"> This section serves as a wallet where the user saves his extra. The user can choose to intentionally send funds from this wallet to his working capital balance. He can also choose to loan out money to friends or family and be able to track what use the fund is put to especially if the fund was lent out as capital to run a business. By adding individuals to a Network, you receive updates on what transactions they perform.  </p>
           <div className="flex flex-wrap justify-between">
-            <img src={sectionTwo} alt="sectionTwo" className="m-6" />
+            <img src={sectionTwo} alt="sectionTwo" className="px-2" />
           </div>
         </div>
         <div className="bg-gray text-center container-fluid py-8">
           <h2>Navigation Bar<span className="text-6xl yellow">.</span></h2>
           <div className="container mx-auto flex flex-wrap justify-between">
-            <img src={manageNetwork} alt="manageNetwork" className="m-6" />
-            <img src={manageNetwork2} alt="manageNetwork2" className="m-6" />
-            <img src={manageNetwork3} alt="manageNetwork3" className="m-6" />
+            <img src={manageNetwork} alt="manageNetwork" className="px-4" />
+            <img src={manageNetwork2} alt="manageNetwork2" className="px-4" />
+            <img src={manageNetwork3} alt="manageNetwork3" className="px-4" />
           </div>
         </div>
         <div className="container mx-auto pt-6 pb-16">
@@ -125,4 +127,4 @@ function Workcappy() {
   )
 }
 
-export default Workcappy
+export default Workycappy

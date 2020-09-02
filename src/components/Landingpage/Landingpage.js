@@ -30,7 +30,7 @@ function Landingpage() {
               <button className="px-8 py-2 border">Get CV</button>
             </div>
           </div>
-          <img className="w-10/12 my-4 mx-auto lg:w-5/12 lg:ml-auto lg:my-0" src={headerimage} alt="header" />
+          <img className="w-10/12 my-6 mx-auto lg:w-5/12 lg:ml-auto lg:my-0" src={headerimage} alt="header" />
         </div>
       </div>
       <div id="the-projects">
@@ -38,20 +38,27 @@ function Landingpage() {
         <div className="container-fluid bg-gray py-6">
           <h5 class="text-center py-12 text-xl">UI/UX Projects</h5>
           <div>
-            <div className="container mx-auto w-10/12">
+            <div className="container mx-auto w-11/12 sm:w-8/12 md:w-6/12 lg:w-10/12">
               <Projectsample 
               heading="WorkyCappy Bank" 
               explaination="A Bank that aids businesses and firms efficiently and effectively manage their working capital"
+              link="workycappy"
                />
-              <Projectsample position="flex-row-reverse" heading="Atunlo (A Recycling App)" explaination="Atunlo helps ensure you do not worry about waste disposal and grants you access to purchase fairly used products too."/>
-              <Projectsample heading="The Nigerian Breweries PLC (Redesign)" explaination="Nigerian Breweries PLC is the pioneer and biggest brewing company in Nigeria"/>
+              <Projectsample position="flex-row-reverse" heading="Atunlo (A Recycling App)" 
+              explaination="Atunlo helps ensure you do not worry about waste disposal and grants you access to purchase 
+              fairly used products too."
+              link="atunlo"/>
+              <Projectsample heading="The Nigerian Breweries PLC (Redesign)" 
+              explaination="Nigerian Breweries PLC is the pioneer and biggest brewing company in Nigeria"
+              link="breweries"
+              />
             </div>
           </div>
         </div>
         <h5 class="text-center py-8 text-xl">Branding Projects</h5>
         <div className="container mx-auto justify-between block lg:flex">
-          <Brandingproject title="PayPorte" label1={src1}/>
-          <Brandingproject title="The Child" label1={src2}/>
+          <Brandingproject title="PayPorte" label1={src1} link="payport"/>
+          <Brandingproject title="The Child" label1={src2} link="thechild"/>
         </div>
       </div>
     </div>

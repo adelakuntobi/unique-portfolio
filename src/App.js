@@ -11,7 +11,11 @@ import Contact from './components/Contact/Contact';
 // import Projects from './components/Projects/Breweries';
 import Logo from './images/logo.svg'
 import Thechild from './components/Projects/Thechild';
-// import Payport from './components/Projects/Payport';
+import Payport from './components/Projects/Payport';
+import Atunlo from './components/Projects/Atunlo';
+import Breweries from './components/Projects/Breweries';
+import Workycappy from './components/Projects/Workcappy';
+
 
 function App() {
   return (
@@ -50,16 +54,21 @@ function App() {
         <div className="main-content">
           <Switch>
             <Route exact path="/" component={Landingpage} />
-            <Route exact path="/projects" component={Thechild} />
+            {/* <Route exact path="/projects" component={Thechild} /> */}
+            <Route exact path="/thechild" component={Thechild} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/projects/workycappy" component={Workycappy} />
+            <Route exact path="/projects/payport" component={Payport} />
+            <Route exact path="/projects/atunlo" component={Atunlo} />
+            <Route exact path="/projects/breweries" component={Breweries} />
             <Redirect to="/" />
           </Switch>
         </div>
         <div>
           <footer className="text-center">
-            <div className="footer_content ">
+            <div className="footer_content px-8">
               <h2 className="yellow text-2xl">Currently Open to Opportunities</h2>
-              <p> I’m currently open to Full time (On-site or Remote), Freelance Opportunities</p>
+              <p className="py-6"> I’m currently open to Full time (On-site or Remote), Freelance Opportunities</p>
               <section className="flex my-4 justify-center">
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob"><img src={gmail} alt="gmail logo" /></a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob"><img src={linkedin} alt="Likendin logo" /></a>
