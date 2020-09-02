@@ -80,14 +80,16 @@ function Workycappy() {
         </div>
         </div>
         <div className="bg-gray text-center container-fluid py-8">
-          <h2>Navigation Bar<span className="text-6xl yellow">.</span></h2>
+          {/* <h2>Navigation Bar<span className="text-6xl yellow">.</span></h2> */}
+          <Text title="Navigation Bar" />
           <div className="container mx-auto flex flex-wrap justify-between">
             <img src={navgroup1} alt="screen1" className="p-6" />
             <img src={navgroup2} alt="screen1" className="p-6" />
           </div>
 
         <div className="container content px-4 text-center mx-auto">
-          <h2>Section One (Working Capital</h2>
+          <h2></h2>
+          <Text title="Section One (Working Capital)" />
           <p className="pb-8">This section focuses on ensuring that the users intended working capital is secured to a great extent. It limits the users options to being able to send out funds from this wallet to only individuals he has added to this suppliers list. This way, money only leaves his wallet directly to the account of who he purchases goods or services from.</p>
           <div className="flex flex-wrap justify-between">
             <img src={sectionOne1} alt="section one" className="px-2" />
@@ -96,21 +98,22 @@ function Workycappy() {
           </div>
         </div>
         <div className="container content px-4 mx-auto">
-          <h2 className="text-center">Transaction Management</h2>
+          {/* <h2 className="text-center">Transaction Management</h2> */}
+          <Text title="Transaction Management" />
           <p className="pb-8"> For an app that is intended to help people make finance related decisions and stick to it, it is of essence to create an avenue for them to split any funds received. This way they are able to differenciate profit from capital. The app enforces this mandatory function by giving a continuous notification until the user splits funds as without completing this process, the amount received won’t reflect on users balance.</p>
           <div className=" flex flex-wrap justify-between">
             <img src={transaction} alt="transaction" className="px-2" />
           </div>
         </div>
         <div className="container content px-4 mx-auto">
-          <h2 className="text-center">Section Two (Profit Wallet)</h2>
+          <Text title="Section Two (Profit Wallet)" />
           <p className="pb-8"> This section serves as a wallet where the user saves his extra. The user can choose to intentionally send funds from this wallet to his working capital balance. He can also choose to loan out money to friends or family and be able to track what use the fund is put to especially if the fund was lent out as capital to run a business. By adding individuals to a Network, you receive updates on what transactions they perform.  </p>
           <div className="flex flex-wrap justify-between">
             <img src={sectionTwo} alt="sectionTwo" className="px-2" />
           </div>
         </div>
         <div className="bg-gray text-center container-fluid py-8">
-          <h2>Navigation Bar<span className="text-6xl yellow">.</span></h2>
+          <Text title="Navigation Bar" />
           <div className="container mx-auto flex flex-wrap justify-between">
             <img src={manageNetwork} alt="manageNetwork" className="px-4" />
             <img src={manageNetwork2} alt="manageNetwork2" className="px-4" />
