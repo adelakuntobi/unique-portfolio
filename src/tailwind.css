@@ -47,3 +47,14 @@ body{
 .orange-bg{
   background-color: #fdfaf4;
 }
+.header ul li::before{
+  content: "\2022";  
+  font-size: 1.5em;
+  color: #ffdf00; 
+  font-weight: 800; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+  margin-top: -2.5em;
+  margin-bottom: -2.5em;
+}

@@ -22,6 +22,7 @@ function Workcappy() {
   return (
     <div>
       <Header title="WorkyCappy Bank"
+      role="Roles I played"
         list1="User Experience (UX) Designer"
         list2="User Interface (UI) Designer"
         list3="Interaction Designer"
@@ -38,7 +39,7 @@ function Workcappy() {
         working capital is used specifically for the purpose it was set out. This goes a long way 
         in ensuring businesses grow into owner’s dream plan.
         `} />
-          <img src={Workcappylogo} alt="banner" />
+          <img className="w-full" src={Workcappylogo} alt="banner" />
           <Text
             title="The Challenge"
             content={`The major challenge i encountered was trying to position this app so it 

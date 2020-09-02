@@ -33,7 +33,7 @@ function Landingpage() {
           <img className="w-10/12 my-4 mx-auto lg:w-5/12 lg:ml-auto lg:my-0" src={headerimage} alt="header" />
         </div>
       </div>
-      <div>
+      <div id="the-projects">
         <h2 class="text-center text-3xl pt-20 pb-5">My Projects<span class="yellow">&#x25AA; </span></h2>
         <div className="container-fluid bg-gray py-6">
           <h5 class="text-center py-12 text-xl">UI/UX Projects</h5>

@@ -8,8 +8,10 @@ import last from './images/last.svg'
 import { Link, NavLink, Route, Switch, Redirect } from 'react-router-dom';
 import Landingpage from './components/Landingpage/Landingpage';
 import Contact from './components/Contact/Contact';
-import Projects from './components/Projects/Atunlo';
+// import Projects from './components/Projects/Breweries';
 import Logo from './images/logo.svg'
+import Thechild from './components/Projects/Thechild';
+// import Payport from './components/Projects/Payport';
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
             </div>
             <ul className="desktop__nav__list">
               <li activeClassName="active" ><NavLink exact to="/">Home</NavLink></li>
-              <li activeClassName="active"><NavLink to="/projects">Projects </NavLink></li>
+              <li activeClassName="active"><NavLink to={{pathname:"/projects"}}>Projects </NavLink></li>
               <li activeClassName="active"><NavLink to="/contact">Contact Me </NavLink></li>
             </ul>
             <div id="openButton" className="mobile__hamburger">
@@ -44,10 +46,11 @@ function App() {
           </div>
         </div>
         </div>
+        
         <div className="main-content">
           <Switch>
             <Route exact path="/" component={Landingpage} />
-            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/projects" component={Thechild} />
             <Route exact path="/contact" component={Contact} />
             <Redirect to="/" />
           </Switch>

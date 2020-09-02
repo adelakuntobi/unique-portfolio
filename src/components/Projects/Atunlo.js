@@ -1,6 +1,6 @@
 import React from 'react'
 // Images
-import Atunlo from '../../images/Atunlo.png'
+import Atunlobanner from '../../images/Atunlo.png'
 import wireFrames1 from '../../images/wireFrames1.svg'
 import wireFrames2 from '../../images/wireFrames2.svg'
 import wasteSell1 from '../../images/wasteSell1.svg'
@@ -12,11 +12,12 @@ import wasteDisposal2 from '../../images/wasteDisposal2.svg'
 import Header from '../ProjectComponent/Header'
 import Text from '../ProjectComponent/Text'
 import '../../css/Projects.css';
-function Projects() {
+function Atunlo() {
   return (
     <div>
       <Header
         title="Atunlo (A Recycling Firm)"
+        role="Roles I played"
         list1="User Experience (UX) Designer"
         list2="User Interface (UI) Designer"
         list3="Interaction Designer" />
@@ -32,7 +33,7 @@ function Projects() {
             sell out materials/equipment they do not need anymore. It also creates an avenue for organizations 
             and individuals to reach out to non-governmental organizations, motherless babies homes, etc in case 
             they want to donate to them instead.`} />
-          <img src={Atunlo} alt="Atunlo banner" />
+          <img className="w-full" src={Atunlobanner} alt="Atunlo banner" />
           <div className="target-users px-4 md:px-8 lg:px-0">
             <h2>Atunlo’s Target Users</h2>
             <ul className="gap-16 pl-8">
@@ -83,4 +84,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Atunlo
