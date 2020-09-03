@@ -25,7 +25,7 @@ function Breweries() {
           with the existing interface, it was difficult to really understand what the platform was all 
           about especially for a first time user who does not know much about Nigerian Breweries. 
           I ensured i broke down all essential features so it becomes clearer what the firm’s core 
-          objectives truly are.`]}
+          objectives truly are.`]} key="1"
         />
         <img className="w-full" src={banner} alt="The banner" />
         <Text title="The Challenge"

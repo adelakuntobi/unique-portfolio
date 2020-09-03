@@ -69,7 +69,7 @@ function Workycappy() {
             individual to their Network. This helps the user ensure that funds they lent out are used for its 
             intended purpose`}
           />
-          <div className="flex-col-reverse lg:flex-row flex p-16 container mx-auto">
+          <div className="flex-col-reverse lg:flex-row flex lg:p-16 container mx-auto">
             <div className="flex w-full lg:w-8/12">
               <img className="w-6/12 px-4" src={screen1} alt="screen1" />
               <img className="w-6/12 px-4" src={screen2} alt="screen1" />
@@ -88,7 +88,6 @@ function Workycappy() {
           </div>
 
         <div className="container content px-4 text-center mx-auto">
-          <h2></h2>
           <Text title="Section One (Working Capital)" />
           <p className="pb-8">This section focuses on ensuring that the users intended working capital is secured to a great extent. It limits the users options to being able to send out funds from this wallet to only individuals he has added to this suppliers list. This way, money only leaves his wallet directly to the account of who he purchases goods or services from.</p>
           <div className="flex flex-wrap justify-between">

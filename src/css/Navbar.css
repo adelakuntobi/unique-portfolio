@@ -25,7 +25,6 @@ a:hover {
 
 #the_navbar .nav__logo {
   font-weight: 600;
-  font-size: 2rem;
   margin: auto 0;
   width: 200px;
 }
@@ -83,7 +82,7 @@ a:hover {
 
 #the_navbar .mobile__nav,
 #the_navbar .mobile__hamburger {
-  display: none;
+
   overflow: hidden;
 }
 
@@ -133,7 +132,7 @@ a:hover {
   right: 0;
   background-color: #0D1946;
   color: #fff;
-  display: none;
+  /* display: none; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -181,7 +180,7 @@ a:hover {
 }
 
 #the_navbar .mobile__nav__bg .mobile__nav .active {
-  color: #FFDF00;
+  color: #FFDF00 !important;
 }
 
 /* Footer */
@@ -198,6 +197,9 @@ a:hover {
 
  footer .footer_content img {
   margin: 0 10px;
+}
+#menu-toggle:checked + #myModal {
+  display: flex;
 }
 
 @keyframes slide-down {
