@@ -47,9 +47,9 @@ function App() {
               </div>
             </label>
               <ul>
-                <li htmlFor="menu-toggle"><a href={Landingpage} htmlFor="menu-toggle" activeClassName="active">Home</a></li>
-                <li htmlFor="menu-toggle"><a href={Landingpage} htmlFor="menu-toggle" activeClassName="active" to={{ pathname: "/projects/" }}>Projects </a></li>
-                <li htmlFor="menu-toggle"><a href={Landingpage} htmlFor="menu-toggle" activeClassName="active" >Contact Me </a></li>
+                <li htmlFor="menu-toggle"><NavLink htmlFor="menu-toggle" activeClassName="active" exact to="/">Home</NavLink></li>
+                <li htmlFor="menu-toggle"><NavLink htmlFor="menu-toggle" activeClassName="active" to={{ pathname: "/projects" }}>Projects </NavLink></li>
+                <li htmlFor="menu-toggle"><NavLink htmlFor="menu-toggle" activeClassName="active" to="/contact">Contact Me </NavLink></li>
               </ul>
             </div>
           </div>
