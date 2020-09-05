@@ -29,6 +29,9 @@
 h1,h2,h3,h4,h5{
   font-family: "Averta-Bold";
 }
+p{
+  font-family: "Averta-Light";
+}
 body{
   color: #0d1946;
 }

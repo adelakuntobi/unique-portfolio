@@ -24,7 +24,7 @@ function App() {
         <div className="container mx-auto">
           <nav className="container mx-auto desktop__navbar px-6 lg:px-0">
             <div className="logo">
-              <img src={Logo} alt="logo" className="w-1/12 lg:w-1/6 mx-4" />
+              <img src={Logo} alt="logo" className="w-1/12 mx-4" />
               <p className="nav__logo text-xl lg:text-3xl">Unique<span>Ideas</span>.</p>
             </div>
             <ul className="desktop__nav__list">

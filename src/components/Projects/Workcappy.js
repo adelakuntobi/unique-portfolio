@@ -76,7 +76,6 @@ function Workycappy() {
             </div>
             <h1 className="text-4xl m-auto">Home Screen<span className="yellow text-5xl">.</span></h1>
           </div>
-          <span style={{ color: "#FF2525" }} className="py-4">* Hello, Please Tap Image to Zoom</span>
         </div>
         </div>
         <div className="bg-gray text-center container-fluid py-8">
@@ -89,7 +88,7 @@ function Workycappy() {
 
         <div className="container content px-4 text-center mx-auto">
           <Text title="Section One (Working Capital)" />
-          <p className="pb-8">This section focuses on ensuring that the users intended working capital is secured to a great extent. It limits the users options to being able to send out funds from this wallet to only individuals he has added to this suppliers list. This way, money only leaves his wallet directly to the account of who he purchases goods or services from.</p>
+          <p className="text-center lg:text-left pb-8">This section focuses on ensuring that the users intended working capital is secured to a great extent. It limits the users options to being able to send out funds from this wallet to only individuals he has added to this suppliers list. This way, money only leaves his wallet directly to the account of who he purchases goods or services from.</p>
           <div className="flex flex-wrap justify-between">
             <img src={sectionOne1} alt="section one" className="px-2" />
             <img src={sectionOne2} alt="section two" className="px-2" />
@@ -119,7 +118,7 @@ function Workycappy() {
             <img src={manageNetwork3} alt="manageNetwork3" className="px-4" />
           </div>
         </div>
-        <div className="container mx-auto pt-6 pb-16">
+        <div className="container text-left mx-auto pt-6 pb-16">
           <a target="_blank" rel="noopener noreferrer" href="https://github.com" className="font-bold inline-block pt-6 ">View Working Capital Wallet Prototype Here</a><br />
           <a target="_blank" rel="noopener noreferrer" href="https://github.com" className="font-bold inline-block pt-6 ">View Profit Wallet Prototype Here</a>
         </div>
