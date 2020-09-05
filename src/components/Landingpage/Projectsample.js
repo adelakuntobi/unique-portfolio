@@ -1,10 +1,10 @@
 import React from 'react'
-import project1 from '../../images/Rectangle 593 (2).png'
+
 import { Link } from 'react-router-dom'
 
 // var project2 = require('../../images/Rectangle 593.png');
 function Projectsample(props) {
-  const {heading,explaination,position,link} = props
+  const {heading,explaination,position,link,project1} = props
   return (
     <div>
       <div className={`${position} text-white block lg:flex pb-16 gap-x-16`}>

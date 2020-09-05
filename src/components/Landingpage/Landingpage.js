@@ -4,6 +4,9 @@ import Brandingproject from './Brandingproject'
 import headerimage from '../../images/header__image.svg'
 import src1 from '../../images/Rectangle 596.svg'
 import src2 from '../../images/Rectangle 597.svg'
+import workyy from '../../images/Rectangle 593 (2).png'
+import breweries from '../../images/Rectangle 593 (1).png'
+import atunloimg from '../../images/Rectangle 593.png'
 // import { Switch, Route } from 'react-router-dom'
 // import Workcappy from '../Projects/Workcappy'
 // import Projects from '../Projects/Atunlo'
@@ -39,14 +42,17 @@ function Landingpage() {
               heading="WorkyCappy Bank" 
               explaination="A Bank that aids businesses and firms efficiently and effectively manage their working capital"
               link="workycappy"
+              project1={workyy}
                />
               <Projectsample position="flex-row-reverse" heading="Atunlo (A Recycling App)" 
               explaination="Atunlo helps ensure you do not worry about waste disposal and grants you access to purchase 
               fairly used products too."
+              project1={atunloimg}
               link="atunlo"/>
               <Projectsample heading="The Nigerian Breweries PLC (Redesign)" 
               explaination="Nigerian Breweries PLC is the pioneer and biggest brewing company in Nigeria"
               link="breweries"
+              project1={breweries}
               />
             </div>
           </div>
