@@ -59,7 +59,7 @@ function Atunlo() {
           </div>
           <div className="flex-col-reverse lg:flex-row justify-between flex container mx-auto">
             <img src={highFidelity} alt="highFidelity" className="w-full lg:w-9/12" />
-            <h1 className="text-4xl text-center lg:m-auto my-8 w-full">Onboarding Screens<span className="yellow text-5xl">.</span></h1>
+            <h1 className="text-2xl text-center lg:m-auto my-8 w-full">Onboarding Screens<span className="yellow text-5xl">.</span></h1>
           </div>
         </div>
         </div>

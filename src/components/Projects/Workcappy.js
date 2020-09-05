@@ -74,7 +74,7 @@ function Workycappy() {
               <img className="w-6/12 px-4" src={screen1} alt="screen1" />
               <img className="w-6/12 px-4" src={screen2} alt="screen1" />
             </div>
-            <h1 className="text-4xl m-auto">Home Screen<span className="yellow text-5xl">.</span></h1>
+            <h1 className="text-2xl m-auto">Home Screen<span className="yellow text-5xl">.</span></h1>
           </div>
         </div>
         </div>
@@ -88,7 +88,7 @@ function Workycappy() {
 
         <div className="container content px-4 text-center mx-auto">
           <Text title="Section One (Working Capital)" />
-          <p className="text-center lg:text-left pb-8">This section focuses on ensuring that the users intended working capital is secured to a great extent. It limits the users options to being able to send out funds from this wallet to only individuals he has added to this suppliers list. This way, money only leaves his wallet directly to the account of who he purchases goods or services from.</p>
+          <p className="text-left pb-8">This section focuses on ensuring that the users intended working capital is secured to a great extent. It limits the users options to being able to send out funds from this wallet to only individuals he has added to this suppliers list. This way, money only leaves his wallet directly to the account of who he purchases goods or services from.</p>
           <div className="flex flex-wrap justify-between">
             <img src={sectionOne1} alt="section one" className="px-2" />
             <img src={sectionOne2} alt="section two" className="px-2" />
