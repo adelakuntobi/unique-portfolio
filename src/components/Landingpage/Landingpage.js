@@ -12,7 +12,7 @@ function Landingpage() {
   return (
     <div className="">
 
-      <div className="header-content container-fluid py-12 background-blue text-white">
+      <div className="header-content container-fluid py-0 lg:py-12 background-blue text-white">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row">
           <div className="my-auto w-full lg:w-6/12 px-8">
             <p className="uppercase font-semibold"><span className="yellow">Hello,</span> I'm Ifeoma Ukandu</p>
@@ -26,7 +26,7 @@ function Landingpage() {
               <button className="w-full md:w-7/12 lg:w-4/12 my-2 lg:my-0 py-2 border">Get CV</button>
             </div>
           </div>
-          <img className="w-7/12 my-6 mx-auto lg:w-5/12 lg:ml-auto lg:my-0" src={headerimage} alt="header" />
+          <img className="w-8/12 my-6 mx-auto lg:w-5/12 lg:ml-auto lg:my-0" src={headerimage} alt="header" />
         </div>
       </div>
       <div id="the-projects">
