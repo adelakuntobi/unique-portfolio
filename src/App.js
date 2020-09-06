@@ -61,7 +61,7 @@ function App() {
           <div id="myModal" className={isOpen ? "hidden": "mobile__nav__bg bg-opacity-50 flex"}>
 
             <div className="mobile__nav">
-              <div htmlFor="menu-toggle" id="closeBtn" className="closeBtn">
+              <div onClick={closeNav} id="closeBtn" className="closeBtn">
                 <div></div>
               </div>
               <ul>
