@@ -8,19 +8,23 @@ h2{
 }
 .target-users li{
   margin-bottom: 1.5rem;
-  opacity: 0.7;
+  opacity: 0.5;
+  font-family: "Averta-light";
+}
+.target-users li b{
+  font-family: "Averta-Bold";
 }
 .target-users ul{
 
 }
 .target-users li::before{
-  content: "\220E";  
+  content: "\220E";
   font-size: 1em;
-  color: #ffdf00; 
-  font-weight: 800; 
-  display: inline-block; 
-  width: 2em; 
-  margin-left: -1em; 
+  color: #ffdf00;
+  font-weight: 800;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em;
   /* margin-top: -2.5em; */
   /* margin-bottom: -2.5em; */
 }

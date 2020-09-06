@@ -37,10 +37,10 @@ function Atunlo() {
           <div className="target-users px-4 md:px-8 lg:px-0">
             <h2>Atunlo’s Target Users</h2>
             <ul className="gap-16 pl-8">
-              <li>Who? People aged 15-60 living in Lagos State Nigeria. These are people who are old enough to make decisions for themselves and also people who can use smartphones, even if minimally as the Atunlo app is beginner friendly</li>
-              <li> What? The app will allow individuals easily dispose off their dirts by letting the firm's truck pick it up from their doorstep or by dropping it off at the nearest dumping site made available by Atunlo</li>
-              <li>When? People who need to easily dispose off their dirts without so much hassle.</li>
-              <li>How? Atunlo Mobile Application</li>
+              <li><b>Who? </b>People aged 15-60 living in Lagos State Nigeria. These are people who are old enough to make decisions for themselves and also people who can use smartphones, even if minimally as the Atunlo app is beginner friendly</li>
+              <li><b>What?</b> The app will allow individuals easily dispose off their dirts by letting the firm's truck pick it up from their doorstep or by dropping it off at the nearest dumping site made available by Atunlo</li>
+              <li><b>When?</b> People who need to easily dispose off their dirts without so much hassle.</li>
+              <li><b>How? </b>Atunlo Mobile Application</li>
             </ul>
           </div>
 

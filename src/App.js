@@ -15,9 +15,28 @@ import Payport from './components/Projects/Payport';
 import Atunlo from './components/Projects/Atunlo';
 import Breweries from './components/Projects/Breweries';
 import Workycappy from './components/Projects/Workcappy';
+import { useState } from 'react';
+import Theproject from './components/Theproject/Theproject';
 
 
 function App() {
+
+  const [isOpen, setisOpen] = useState(true)
+
+  const closeNav = () => {
+
+    if( isOpen === true ){
+      setisOpen(
+        Opennav => Opennav = false
+      )
+    }
+    else{
+      setisOpen(
+        Opennav => Opennav = true
+      )
+    }
+  }
+
   return (
     <div className="App">
       <div id="the_navbar" className="container-fluid">
@@ -33,23 +52,22 @@ function App() {
               <li><NavLink activeClassName="active" to="/contact">Contact Me </NavLink></li>
             </ul>
             <label htmlFor="menu-toggle" className="block lg:hidden">
-              <div id="openButton" className="mobile__hamburger">
+              <div id="openButton" className="mobile__hamburger" onClick={closeNav}>
                 <div></div>
               </div>
             </label>
           </nav>
-            <input type="checkbox" id="menu-toggle" className="hidden" />
-          <div id="myModal" className="mobile__nav__bg hidden bg-opacity-50">
+            {/* <input type="checkbox" id="menu-toggle" className="hidden" /> */}
+          <div id="myModal" className={isOpen ? "hidden": "mobile__nav__bg bg-opacity-50 flex"}>
+
             <div className="mobile__nav">
-            <label htmlFor="menu-toggle" className="block lg:hidden">
-              <div id="closeBtn" className="closeBtn">
+              <div htmlFor="menu-toggle" id="closeBtn" className="closeBtn">
                 <div></div>
               </div>
-            </label>
               <ul>
-                <li htmlFor="menu-toggle"><NavLink htmlFor="menu-toggle" activeClassName="active" exact to="/">Home</NavLink></li>
-                <li htmlFor="menu-toggle"><NavLink htmlFor="menu-toggle" activeClassName="active" to={{ pathname: "/projects" }}>Projects </NavLink></li>
-                <li htmlFor="menu-toggle"><NavLink htmlFor="menu-toggle" activeClassName="active" to="/contact">Contact Me </NavLink></li>
+                <li htmlFor="menu-toggle" onClick={closeNav}><NavLink htmlFor="menu-toggle" activeClassName="active" exact to="/">Home</NavLink></li>
+                <li htmlFor="menu-toggle" onClick={closeNav}><NavLink htmlFor="menu-toggle" activeClassName="active" to={{ pathname: "/projects" }}>Projects </NavLink></li>
+                <li htmlFor="menu-toggle" onClick={closeNav}><NavLink htmlFor="menu-toggle" activeClassName="active" to="/contact">Contact Me </NavLink></li>
               </ul>
             </div>
           </div>
@@ -59,7 +77,7 @@ function App() {
       <div className="main-content">
         <Switch>
           <Route exact path="/" component={Landingpage} />
-          {/* <Route exact path="/projects" component={Thechild} /> */}
+          <Route exact path="/projects" component={Theproject} />
           <Route exact path="/projects/thechild" component={Thechild} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/projects/workycappy" component={Workycappy} />

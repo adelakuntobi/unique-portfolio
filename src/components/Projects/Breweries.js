@@ -15,8 +15,8 @@ function Breweries() {
         list3="Interaction Designer" />
       <div className="content container mx-auto px-4 md:px-8 lg:px-0">
         <Text title="Project Overview"
-          content={[`PS: This isn’t an officially approved Redesign but a fun project. 
-          I felt the need to so i proceeded with doing it.`, <br />, <br />, `Nigerian Breweries PLC is the 
+          content={[<i><b className="the-ps">PS: This isn’t an officially approved Redesign but a fun project. 
+          I felt the need to so i proceeded with doing it.</b>,</i>, <br />, <br />, `Nigerian Breweries PLC is the 
           pioneer and biggest brewing company in Nigeria. It serves the Nigerian market and 
           exports to other parts of West Africa. The goal was to create a unique solution focusmg on 
           2 (two) key features`, <br />, <br />, `- Amazing User Interface: As a platform with a focus on serving its users, 
