@@ -134,8 +134,8 @@ function Workycappy() {
           </div>
         </div>
         <div className="container text-left mx-auto pt-6 pb-16">
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com" className="font-bold inline-block pt-6 ">View Working Capital Wallet Prototype Here</a><br />
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com" className="font-bold inline-block pt-6 ">View Profit Wallet Prototype Here</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/ZJwSf0VPxdo" className="font-bold inline-block pt-6 ">View Working Capital Wallet Prototype Here</a><br />
+          <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/3eAExV1RU9k" className="font-bold inline-block pt-6 ">View Profit Wallet Prototype Here</a>
         </div>
       </div>
 

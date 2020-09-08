@@ -33,7 +33,7 @@ function Breweries() {
         <Text title="The Solution"
           content="Based on the existing interface, I outlined required features that the app should possess and imagined it visually." />
 
-        <a className="font-extrabold" href="https://github.com">View Prototype Here</a>
+        <a className="font-extrabold" href="https://youtu.be/ztB-bR5wCw4">View Prototype Here</a>
       </div>
     </div>
   )

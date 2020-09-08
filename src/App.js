@@ -77,13 +77,13 @@ function App() {
       <div className="main-content">
         <Switch>
           <Route exact path="/" component={Landingpage} />
-          <Route exact path="/projects" component={Theproject} />
-          <Route exact path="/projects/thechild" component={Thechild} />
+          <Route path="/projects" component={Theproject} />
+          <Route path="/projects/thechild" component={Thechild} />
           <Route exact path="/contact" component={Contact} />
-          <Route exact path="/projects/workycappy" component={Workycappy} />
-          <Route exact path="/projects/payport" component={Payport} />
-          <Route exact path="/projects/atunlo" component={Atunlo} />
-          <Route exact path="/projects/breweries" component={Breweries} />
+          <Route path="/projects/workycappy" component={Workycappy} />
+          <Route path="/projects/payport" component={Payport} />
+          <Route path="/projects/atunlo" component={Atunlo} />
+          <Route path="/projects/breweries" component={Breweries} />
           <Redirect to="/" />
         </Switch>
       </div>

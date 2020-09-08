@@ -29,6 +29,7 @@ function Thechild() {
         loc6={child6} dalt6="The child"
         loc7={child7} dalt7="The child"
         loc8={child8} dalt8="The child"
+        link='https://www.behance.net/gallery/93728773/The-Child-Brand-Manual'
       />
     </div>
   )

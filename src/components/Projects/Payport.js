@@ -28,6 +28,7 @@ function Payport() {
       loc6={payport6} dalt6="payport"
       loc7={payport7} dalt7="payport"
       loc8={payport8} dalt8="payport"
+      link='https://www.behance.net/gallery/97779701/Payport-Brand-Identity-Design'
       />
     </div>
   )
