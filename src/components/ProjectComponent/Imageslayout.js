@@ -14,7 +14,7 @@ function Imageslayout(props) {
       <img className="w-full my-6" src={loc6} alt={dalt6} />
       <img className="w-full my-6" src={loc7} alt={dalt7} />
       <img className="w-full my-6" src={loc8} alt={dalt8} />
-      <a className="font-bold cursor-pointer" href={link}> View Full Case Study on Behance</a>
+      <a target="_blank" rel="noopener noreferrer" className="font-bold cursor-pointer" href={link}> View Full Case Study on Behance</a>
     </div>
   )
 }

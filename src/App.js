@@ -77,7 +77,7 @@ function App() {
       <div className="main-content">
         <Switch>
           <Route exact path="/" component={Landingpage} />
-          <Route path="/projects" component={Theproject} />
+          <Route exact path="/projects" component={Theproject} />
           <Route path="/projects/thechild" component={Thechild} />
           <Route exact path="/contact" component={Contact} />
           <Route path="/projects/workycappy" component={Workycappy} />
