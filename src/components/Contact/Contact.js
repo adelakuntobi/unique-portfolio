@@ -40,7 +40,7 @@ function Contact() {
 
       <form className="w-11/12 md:w-8/12 lg:w-6/12 mx-auto py-12" onSubmit={sendEmail}>
         <div className="py-4">
-          <label>Full Name<span className="text-red-600">*</span></label> <i className="fa">&#xf164;</i>
+          <label>Full Name<span className="text-red-600">*</span></label>
 
           <input required type="text" className="block border w-full p-2 mt-3 opacity-75" name="from_name" />
         </div>
