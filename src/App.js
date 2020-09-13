@@ -17,8 +17,10 @@ import Breweries from './components/Projects/Breweries';
 import Workycappy from './components/Projects/Workcappy';
 import { useState } from 'react';
 import Theproject from './components/Theproject/Theproject';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
-
+library.add(fas)
 function App() {
 
   const [isOpen, setisOpen] = useState(true)
@@ -41,7 +43,7 @@ function App() {
     <div className="App">
       <div id="the_navbar" className="container-fluid">
         <div className="container mx-auto">
-          <nav className="container mx-auto desktop__navbar px-6 lg:px-0">
+          <nav className="container mx-auto desktop__navbar px-6 lg:px-0 lg:hidden">
             <div className="logo">
               <img src={Logo} alt="logo" className="w-1/12 mx-4" />
               <p className="nav__logo text-xl lg:text-3xl">Unique<span>Ideas</span>.</p>

@@ -25,7 +25,8 @@ function Landingpage() {
             <button className="w-full md:w-7/12 lg:w-7/12 my-2 lg:my-0 py-2 text-black font-bold yellow-bg">
               <NavLink activeClassName="active" to="/contact">Currently Open to Opportunities </NavLink></button>
               {/* <button className="w-full md:w-7/12 lg:w-7/12 my-2 lg:my-0 py-2 text-black font-bold yellow-bg">Currently Open to Opportunities */}
-              <button className="w-full md:w-7/12 lg:w-4/12 my-2 lg:my-0 py-2 border">Get CV</button>
+              <a href="https://drive.google.com/file/d/1EzY5jrGGPpi27w06wy8ulTCkWXPgmmqc/view" target="_blank" rel="noopener noreferrer"
+               className="w-full md:w-7/12 lg:w-4/12 my-2 lg:my-0 py-2 border text-center">Get CV</a>
             </div>
           </div>
           <img className="w-8/12 my-6 mx-auto lg:w-5/12 lg:ml-auto lg:my-0" src={headerimage} alt="header" />
