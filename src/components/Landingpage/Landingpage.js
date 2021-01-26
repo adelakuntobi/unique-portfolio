@@ -29,7 +29,7 @@ function Landingpage() {
                className="w-full md:w-7/12 lg:w-4/12 my-2 lg:my-0 py-2 border text-center">Get CV</a>
             </div>
           </div>
-          <img className="w-8/12 my-6 mx-auto lg:w-5/12 lg:ml-auto lg:my-0" src={headerimage} alt="header" />
+          {/* <img className="w-8/12 my-6 mx-auto lg:w-5/12 lg:ml-auto lg:my-0" src={headerimage} alt="header" /> */}
         </div>
       </div>
       <Theproject />
