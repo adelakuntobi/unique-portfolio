@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Text(props) {
-  const {title,content,content2,space,key} = props
+  const { title, content, content2, space, key } = props
 
   return (
     <div className="mb-2">

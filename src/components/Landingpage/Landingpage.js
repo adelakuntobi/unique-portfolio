@@ -14,7 +14,7 @@ function Landingpage() {
 
       <div className="header-content container-fluid py-0 lg:py-12 background-blue text-white">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row">
-          <div className="my-auto w-full lg:w-6/12 px-8">
+          <div className="m-auto w-full lg:w-6/12 p-8">
             <p className="uppercase font-semibold"><span className="yellow">Hello,</span> I'm Ifeoma Ukandu</p>
             <h1 className="text-3xl md:text-5xl pb-6 pt-2">Creative Designer</h1>
             <p className="pb-12 ">I’m a seasoned creative designer with experience in the management of the complete design
