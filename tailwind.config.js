@@ -1,15 +1,16 @@
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-  },
-  purge: [],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
+
     extend: {
-      fontFamily: {
-        sans: ['Averta-Regular']
-      }
+      colors: {
+        'primary': '#D1E2C0',
+        'text': "#F3F4F6",
+        "neutral": "#9CA3AF"
+      },
     },
   },
-  variants: {},
   plugins: [],
 }
