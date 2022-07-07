@@ -3,21 +3,30 @@ import { Link } from "react-router-dom"
 // Styled Components
 import styled from "styled-components";
 import Footer from "../../components/Footer";
+import { HOMEPAGE } from "../../utils/pageUrl";
 
 export default function Layout(props) {
-  const { children, title, banner, next, textDesc, route } = props
+  const { children, title, banner, next, textDesc, route, home } = props
   return (
     <div style={{ color: "#E5E7EB" }}>
-      <Navbar />
+      <div className="container">
+        <Navbar />
+      </div>
       <div className="container my-5">
         <h2 className="font-bold text-3xl lg:text-5xl mb-8">{title}</h2>
         <img src={banner} alt="" className="w-full" />
         {children}
-        <NextDiv to={route}>
-          <span>Next</span>
-          <h4>{next}</h4>
-          <p className="text-xl lg:text-3xl tracking-wider">{textDesc}</p>
-        </NextDiv>
+        {
+          home ?
+            <NextDiv to={HOMEPAGE}>
+              <h4>Back to Home</h4>
+            </NextDiv> :
+            <NextDiv to={route}>
+              <span>Next</span>
+              <h4>{next}</h4>
+              <p className="text-xl lg:text-3xl tracking-wider">{textDesc}</p>
+            </NextDiv>
+        }
         <Footer />
       </div>
     </div>

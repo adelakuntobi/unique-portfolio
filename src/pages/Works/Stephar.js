@@ -16,9 +16,9 @@ import Layout, { DivWithHeading, MyRole } from "./Layout";
 export default function Stephar() {
   return (
     <Layout
-      title="Stephar"
-      banner={StepharBG}
-      next="Fintech platform">
+    title="Stephar"
+    banner={StepharBG}
+    home={true}>
 
       {/* About Section */}
       <DivWithHeading>

@@ -4,11 +4,13 @@ import {
   BervHomeBG,
   cult, iCliniq,
   labbox, letsgetchecked,
-  practo, workflow, architecture,
+  practo, workflow, architecture, BervGif,
+  BervGroup1, BervGroup2,
 
   wireframe1, wireframe2, wireframe3, wireframe4, wireframe5,
-  wireframe6, wireframe7, wireframe8, wireframe9, wireframe10,
-  wireframe11, wireframe12
+  wireframe6, wireframe7, wireframe8,
+
+  User1, User2,
 } from "../../assets/images"
 
 // React Icons
@@ -16,25 +18,55 @@ import { BiSearch } from "react-icons/bi"
 import { TbBriefcase, TbUserCircle } from "react-icons/tb"
 
 import Layout, { DivWithHeading, MyRole } from "./Layout";
-import { STEPHAR } from "../../utils/pageUrl";
-
+import { BERVHOME } from "../../utils/pageUrl";
+import styled from "styled-components";
+const UserPersonal = [
+  {
+    img: User1,
+    fullName: "Kenechi Ezenwanne",
+    occupation: "Medical Lab Scientist",
+    age: 35,
+    goals: [
+      "Prepare for patient’s visit.",
+      "Analysing health conditions and creating theories out of these findings.",
+      "Learning more about recent technologies and scaling up my career ladder.",
+      "Being able to impact the world with knowledge I’ve acquired so we stay healthy.",
+    ],
+    frustrations: [
+      "Difficulty in managing entrance and exit of patients",
+      "Lots of time spent in registering patients and getting their biodata",
+      "Uncertainities in patient’s medical history. Some tell lies to make their situation look less severe.",
+    ]
+  },
+  {
+    img: User2,
+    fullName: "Fola Adetunji",
+    occupation: "Chronic Diabetes Patient",
+    age: 40,
+    goals: [
+      "Get his routine tests done as at when due without visiting the diagnostics center often. ",
+      "Be able to access his medical history as soon as he needs them.",
+      "Book consultations with professionals from the comfort of his home.",
+    ],
+    frustrations: [
+      "Constant delay whenever he wants to get his tests done",
+      "Physically documenting his results and having to sort through loads of paper when he needs them.",
+      "Steady visit to the diagnostics center since its a priority that he checks his sugar level often.",
+    ]
+  },
+]
 export default function BervHome() {
   const images = [
     wireframe1, wireframe2, wireframe3, wireframe4, wireframe5,
-    wireframe6, wireframe7, wireframe8, wireframe9, wireframe10,
-    wireframe11, wireframe12
+    wireframe6, wireframe7, wireframe8,
   ]
   return (
-    // <Layout
-    //   title="BervHome Tests"
-    //   banner={BervHomeBG}
-    //   next="Fintech platform">
     <Layout
       title="BervHome Tests"
       banner={BervHomeBG}
       next="Fintech"
       textDesc="Personal Finance Management"
-      route={STEPHAR}>
+      route={BERVHOME}>
 
       {/* About Section */}
       <DivWithHeading className="my-6">
@@ -63,17 +95,17 @@ export default function BervHome() {
               <BiSearch className="text-black text-xl" />
             </div>
             Why BervHomeTests?</h3>
-          <p className=" !leading-10 lg:!mb-8">
-            Physical visits to the diagnostics center are usually time consuming. Most times, we exhaust our day sitting patiently waiting at the doctor’s. Other times we walk away.Even times when we decide to schedule, there are usully inefficiences that stands as blockers.
+          <p className=" leading-6 lg:!leading-10 lg:!mb-8">
+            Physical visits to the diagnostics center are usually time consuming. Most times, we exhaust our day sitting patiently waiting at the doctor’s. Other times we walk away. Even times when we decide to schedule, there are usully inefficiences that stands as blockers.
           </p>
-          <p className=" !leading-10">
+          <p className="  leading-6 lg:!leading-10">
             This has contributed to a great extent to the rate of deterioration of the human health as most individuals purposely miss their checkups or pathological lab appointments because its stressful to get them done.
           </p>
         </DivWithHeading>
         <DivWithHeading>
           <h3>Design Strategy and Solution</h3>
           <div className="flex items-start gap-6 mb-8 mt-6">
-            <div className=" h-16 w-16 p-4 grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
+            <div className=" h-16 w-16 p-4 hidden lg:grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
               <TbBriefcase className="text-black text-3xl" />
             </div>
             <div>
@@ -82,7 +114,7 @@ export default function BervHome() {
             </div>
           </div>
           <div className="flex items-start gap-6">
-            <div className=" h-16 w-16 p-4 grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
+            <div className=" h-16 w-16 p-4 hidden lg:grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
               <TbUserCircle className="text-black text-3xl" />
             </div>
             <div>
@@ -135,10 +167,62 @@ export default function BervHome() {
 
       <DivWithHeading className=" !max-w-5xl mx-auto">
         <h3 className="text-center">User Persona</h3>
-        <img src={architecture} alt="" className="w-full" />
-      </DivWithHeading>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
+          {
+            UserPersonal.map(user => {
+              return (
+
+                <UserPersona key={user.age}>
+                  <div className="imgAndText">
+                    <img src={user.img} alt="" />
+                    <div className=" ">
+                      <h5>{user.fullName}</h5>
+                      <p className="!my-1" style={{ color: "#D1E2C0" }}>{user.occupation}</p>
+                      <p>{user.age} years</p>
+                    </div>
+                  </div>
+                  <div className="my-8">
+                    <h6>Goals</h6>
+                    <ul>
+                      {
+                        user.goals.map(goal => {
+                          return (
+                            <li key={goal}>{goal}</li>
+                          )
+                        })
+                      }
+                    </ul>
+                  </div>
+                  <div>
+                    <h6>Frustrations</h6>
+                    <ul>
+                      {
+                        user.frustrations.map(frustration => {
+                          return (
+                            <li key={frustration}>{frustration}</li>
+                          )
+                        })
+                      }
+                    </ul>
+                  </div>
+                </UserPersona>
+
+              )
+            })
+          }
+        </div>
+      </DivWithHeading >
+
       <DivWithHeading className=" !max-w-5xl mx-auto">
         <h3 className="text-center">User Interface Screens</h3>
+        <img src={BervGif} className="w-full" alt="" />
+
+      </DivWithHeading>
+
+      <div className=" max-w-7xl mx-auto">
+        <img src={BervGroup1} className="w-full" alt="" />
+        <img src={BervGroup2} className="w-full" alt="" />
+
         <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {
             images.map(element => {
@@ -148,9 +232,52 @@ export default function BervHome() {
             })
           }
         </div>
-      </DivWithHeading>
-
-
-    </Layout>
+      </div>
+    </Layout >
   )
 }
+
+
+
+const UserPersona = styled.div`
+  .imgAndText{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    span{
+      color: #D1E2C0;
+    }
+    h5{
+      font-weight: 500;
+      font-size: 24px !important;
+      letter-spacing: -0.011em !important;
+      color: #F9FAFB;
+    }
+    p{
+      color: #D1D5DB;
+      font-size: 18px !important;
+    }
+  }
+  h6{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: -0.022em;
+    color: #F9FAFB;
+  }
+  ul{
+    margin: 1rem 0;
+  }
+  li{
+    font-size: 18px;
+    line-height: 24px;
+    color: #D1D5DB;
+    margin: 0 !important;
+  }
+  @media (max-width: 640px) { 
+    img{
+      width: 100%;
+    }
+   }	
+`;
